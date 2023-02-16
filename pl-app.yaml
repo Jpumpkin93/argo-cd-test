@@ -19,9 +19,9 @@ spec:
           image: jpumpkin93/pl-app:latest
           ports:
             - containerPort: 8080
-          livenessProbe:
+          readinessProbe:
             httpGet:
-              path: /actuator/health
+              path: /
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 10
