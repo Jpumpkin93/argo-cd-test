@@ -26,8 +26,8 @@ spec:
       autoPromotionEnabled: false
 
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: rollout-bluegreen-active
 spec:
@@ -41,8 +41,8 @@ spec:
   type: NodePort
 
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: rollout-bluegreen-preview
 spec:
